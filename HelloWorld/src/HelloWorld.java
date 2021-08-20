@@ -5,6 +5,10 @@
  */
 public class HelloWorld {
     public static void main(String[] args) {
+        /**
+         * Program entry point
+         * @param args command-line arguments
+         */
         System.out.println("Hello World!");
         // Single line comment
 
