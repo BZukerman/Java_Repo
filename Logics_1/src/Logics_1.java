@@ -8,12 +8,12 @@ D) ^ и !=   Ответ
 
 public class Logics_1 {
     public static void main(String[] args) {
-        boolean a;
+        boolean a;      // Исходные данные
         boolean b;
-        boolean c;
+        boolean c;      // Результат
         a = false;
         b = false;
-        c = (a != b);
-        System.out.println(c);
+        c = (a != b);   // Проверяемое условие
+        System.out.println(c);      // печать результата
     }
 }
