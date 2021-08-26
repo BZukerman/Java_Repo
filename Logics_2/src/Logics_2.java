@@ -4,25 +4,25 @@
   Во всех остальных случаях метод должен возвращать false.
  */
 
-import java.util.Scanner;
+import java.util.Scanner;       // Импорт модуля Scanner
 
 public class Logics_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String ah, bh, ch, dh;
+        String ah, bh, ch, dh;      // Объявление строковых переменных
         boolean a = false, b = false, c = false, d = false, result = false;
-        boolean ar [];
+        boolean ar [];              // Объявление будевского массива
         ar = new boolean [4];
-        int summa = 0;
+        int summa = 0;              // Сумматор
 
         System.out.println("Введите cимвол t для true или f для false:");
 
-        ah = sc.nextLine();
+        ah = sc.nextLine();         // Ввод данных
         bh = sc.nextLine();
         ch = sc.nextLine();
         dh = sc.nextLine();
 
-        if (ah.matches ("t")) {
+        if (ah.matches ("t")) {     // Присвоение переменных
             a = true;
             };
         if (ah.matches ("f")) {
@@ -51,7 +51,7 @@ public class Logics_2 {
             };
 /*        System.out.println(d);  */
 
-        ar[0] = a;
+        ar[0] = a;                          // Заполнение массива
 /*        System.out.println(ar[0]);  */
         ar[1] = b;
 /*        System.out.println(ar[1]);  */
@@ -59,9 +59,9 @@ public class Logics_2 {
 /*        System.out.println(ar[2]);  */
         ar[3] = d;
 /*        System.out.println(ar[3]);  */
-        int hel[];
+        int hel[];                          // Вспомогательный массив
         hel = new int[4];
-        for (int i = 0; i <= 3; i++) {
+        for (int i = 0; i <= 3; i++) {      // Цикл по его элементам
             if (ar[i] == true) {
                 hel[i] = 1;
                 };
@@ -69,18 +69,18 @@ public class Logics_2 {
                 hel[i] = 0;
                 };
 /*            System.out.println(hel[i]);  */
-            summa = summa + hel[i];
+            summa = summa + hel[i];             // Сумммирование элементов
 /*            System.out.println(summa);  */
         }
 /*        System.out.println(summa);  */
     /* summa = sum(help); */
-        if (summa != 2) {
+        if (summa != 2) {                   // Анализ суммы
             result = false;
             }
         if (summa == 2) {
             result = true;
         };
 /*    return result; */
-        System.out.print(result);
+        System.out.print(result);           // Печать  результата
         }
     }
