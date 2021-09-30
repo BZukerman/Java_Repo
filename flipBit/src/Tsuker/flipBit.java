@@ -5,65 +5,74 @@ import java.util.Scanner;
 public class flipBit {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);        // Организация ввода данных
+        Scanner sc = new Scanner(System.in);
 
-        int valint, lenstr, bitIndex, position, start, end, result;     // Описания переменных
+        int valint, lenstr, bitIndex, position, start, end, result, index;
         String valstr, repiStr, newValstr;
         StringBuilder valstrSB, newValstrSB;
-        char chari, repi = '0';
-        // 1. Ввод и печать целого числа для преобразования
+        char chari, repi  = '0';
+
         System.out.println("Enter valint :");
         valint = sc.nextInt();
-        System.out.print("valint: ");               // Печать числа
+        System.out.print("valint: ");
         System.out.println(valint);
-        // Ввод целого числа - номер позиции бита (слева направо от 1 до длины битовой строки)
-        System.out.println("Enter bitIndex :");     // Номер позиции (нумерация от 1)
+
+        System.out.println("Enter bitIndex :");
         bitIndex = sc.nextInt();
-        position = bitIndex - 1;                    // Номер бита (нумерация от 0)
+        position = bitIndex - 1;
         System.out.print("bitIndex: ");
-        System.out.println(bitIndex);               // Печать номера бита
+        System.out.println(bitIndex);
+        if (bitIndex == 0) {
+            System.out.println("bitIndex должен быть > 0!");
+            System.exit(-1);                // Нештатное завершение программы
+        };
         System.out.print("position: ");
-        System.out.println(position);               // Печать позиции бита
+        System.out.println(position);
 
-
-        valstr = Integer.toBinaryString(valint);    // Преобразование Integer в строку Binary
+        valstr = Integer.toBinaryString(valint);
         System.out.print("valstr: ");
-        System.out.println(valstr);                 // Печать строки битов
+        System.out.println(valstr);
 
-        lenstr = valstr.length();                   // Длина строки битов
+        lenstr = valstr.length();
         System.out.print("lenstr: ");
-        System.out.println(lenstr);                 // Печать длины строки битов
-        if (bitIndex >= lenstr)                     // Если номер бита больше длины строки
+        System.out.println(lenstr);
+        index = lenstr - bitIndex;
+        System.out.print("index: ");
+        System.out.println(index);
+
+        if (bitIndex > lenstr)
         {System.out.println("Величина bitIndex = или > длины строки valstr!");
-            System.exit(-1);};                // Нештатное завершение программы
-        chari = valstr.charAt(bitIndex);
+            System.exit(-2);};            // Нештатное завершение программы
+
+        chari = valstr.charAt(index);
         System.out.print("chari: ");
-        System.out.println(chari);                  // Печать заменяемого бита
+        System.out.println(chari);
 
-        if (chari == '0') {repi = '1';};            // Если бит равен '0'
-        if (chari == '1') {repi = '0';};            // Если бит равен '1'
+        if (chari == '0') {repi = '1';};
+        if (chari == '1') {repi = '0';};
         System.out.print("repi: ");
-        System.out.println(repi);                   // Печать заменяемого бита
+        System.out.println(repi);
 
-        valstrSB = new  StringBuilder(valstr);      // Преобразование String в StringBuilder
+        valstrSB = new  StringBuilder(valstr);
         System.out.print("valstrSB: ");
-        System.out.println(valstrSB);               // Печать строки типа StringBuilder
-        repiStr = Character.toString(repi);         // Преобразование char в String
+        System.out.println(valstrSB);
+        repiStr = Character.toString(repi);
+
         System.out.print("repiStr: ");
-        System.out.println(repiStr);                // Печать строки заменяющего бита
+        System.out.println(repiStr);
 
-        start = bitIndex;                           // Начало подстроки символов для замены
-        end = bitIndex + 1;                         // Конец подстроки символов для замены
-        newValstrSB = valstrSB.replace(start, end, repiStr);    // Замена подстроки на repiStr
+        start = index;
+        end = index + 1;
+        newValstrSB = valstrSB.replace(start, end, repiStr);
         System.out.print("newValstrSB: ");
-        System.out.println(newValstrSB);            // Печать новой строки типа StringBuilder
+        System.out.println(newValstrSB);
 
-        newValstr = new String(newValstrSB);        // Преобразование StringBuilder в String
-        result = Integer.parseInt(newValstr, 2);    // Преобразование String в Integer
+        newValstr = new String(newValstrSB);
+        result = Integer.parseInt(newValstr, 2);
         System.out.print("result: ");
-        System.out.println(result);                 // Печать целого после замены бита
+        System.out.println(result);
 
-        System.exit(0);                       // Штатное завершение программы
+        System.exit(0);     // Штатное завершение программы
 
     };
 }
