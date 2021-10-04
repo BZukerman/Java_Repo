@@ -1,3 +1,8 @@
+/*
+  Реализуйте метод flipBit, изменяющий значение одного бита заданного целого числа на
+  противоположное. Данная задача актуальна, например, при работе с битовыми полями.
+  Договоримся, что биты нумеруются от младшего (индекс 1) к старшему (индекс 32).
+*/
 package Tsuker;
 
 import java.util.Scanner;
@@ -22,7 +27,7 @@ public class flipBit {
         position = bitIndex - 1;
         System.out.print("bitIndex: ");
         System.out.println(bitIndex);
-        if (bitIndex == 0) {
+        if (bitIndex <= 0) {
             System.out.println("bitIndex должен быть > 0!");
             System.exit(-1);                // Нештатное завершение программы
         };
