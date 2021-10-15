@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eadea843-5696-47d4-b946-c8878799f0d5" name="Changes" comment="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). &#10;Использован вариант для Java v. 11 и выше:&#10;appendix = fill.repeat(bits - lenstr);&#10;Он НЕ работает ни на Java Trinket, ни в системе контроля Stepik." />
+    <list default="true" id="eadea843-5696-47d4-b946-c8878799f0d5" name="Changes" comment="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). Вариант String padded = appendix.substring(unpadded.length()) + unpadded; (для Java v. &lt; 11). Этот вариант приняла система контроля Stepik." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +16,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1zXYLyIrx0MsypWUAPDTDGb14xD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634296472584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). Вариант String padded = appendix.substring(unpadded.length()) + unpadded; (для Java v. &lt; 11). Этот вариант приняла система контроля Stepik.">
+      <created>1634297180961</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634297180961</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). &#10;Использован вариант для Java v. 11 и выше:&#10;appendix = fill.repeat(bits - lenstr);&#10;Он НЕ работает ни на Java Trinket, ни в системе контроля Stepik." />
-    <option name="LAST_COMMIT_MESSAGE" value="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). &#10;Использован вариант для Java v. 11 и выше:&#10;appendix = fill.repeat(bits - lenstr);&#10;Он НЕ работает ни на Java Trinket, ни в системе контроля Stepik." />
+    <MESSAGE value="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). Вариант String padded = appendix.substring(unpadded.length()) + unpadded; (для Java v. &lt; 11). Этот вариант приняла система контроля Stepik." />
+    <option name="LAST_COMMIT_MESSAGE" value="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). Вариант String padded = appendix.substring(unpadded.length()) + unpadded; (для Java v. &lt; 11). Этот вариант приняла система контроля Stepik." />
   </component>
 </project>
