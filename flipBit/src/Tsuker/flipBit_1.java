@@ -6,14 +6,18 @@
   Использован совет коллеги Dima Kurilchik: 1) целые от -2147483648 до 2147483647 .
   2) Для преобразования бинарной строки в int нужно использовать метод parseUnsignedInt(...)
   для беззнаковых представлений.
-  Для дополнения строки нулями слева использован метод appendix = fill.repeat(bits - lenstr)
-  (требуется Java v.11 и выше)
+  Для дополнения строки нулями слева использован метод:
+        String unpadded = "12345";
+        appendix = "00000000000000000000000000000000";      // 32 символа
+        String padded = appendix.substring(unpadded.length()) + unpadded;
+        ==>
+        00000000000000000000000000012345
 */
 package Tsuker;
 
 import java.util.Scanner;
 
-public class flipBit {
+public class flipBit_1 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);    // Организация ввода данных
@@ -22,6 +26,7 @@ public class flipBit {
         String valstr, repiStr, newValstr, appendix, fill = "0";
         StringBuilder valstrSB, newValstrSB;
         char chari, repi  = '0';
+        appendix = "00000000000000000000000000000000";      // 32 символа
 
         System.out.println("Enter valint :");   // Печать предложения ввода
         valint = sc.nextInt();                  // Ввод
@@ -51,8 +56,7 @@ public class flipBit {
 
         if (lenstr < bits)                  // Т.е. двоичный код числа > 0 дополняется нулями слева
         {
-            appendix = fill.repeat(bits - lenstr);      // Строка дополнения до 32 символов
-            valstr = appendix + valstr;                 // Получение строки длиной 32 символа
+            valstr = appendix.substring(valstr.length()) + valstr;
             System.out.print("valstr_new: ");           // Печать
             System.out.println(valstr);
         };
