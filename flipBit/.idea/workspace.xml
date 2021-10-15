@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eadea843-5696-47d4-b946-c8878799f0d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flipBit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/dictionaries" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/runConfigurations/Main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/runConfigurations/flipBit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/flipBit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/out/production/fli[pBit/Tsuker/flipBit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_/src/Tsuker/flipBit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flipBit_1/.idea/runConfigurations/flipBit_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fli[pBit_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/Tsuker/flipBit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/Tsuker/flipBit_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tsuker/flipBit.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1zXYLyIrx0MsypWUAPDTDGb14xD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager">
+    <configuration name="flipBit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tsuker.flipBit" />
+      <module name="flipBit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tsuker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.flipBit" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Boris Tsukerman\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eadea843-5696-47d4-b946-c8878799f0d5" name="Changes" comment="" />
+      <created>1634295850683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634295850683</updated>
+    </task>
+    <servers />
+  </component>
+</project>
