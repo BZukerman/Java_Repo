@@ -6,7 +6,7 @@ package Tsuker;
 
 import java.util.Scanner;
 
-public class Main {
+public class Unicode_Example {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);    // Организация ввода данных
