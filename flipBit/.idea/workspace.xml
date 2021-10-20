@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eadea843-5696-47d4-b946-c8878799f0d5" name="Changes" comment="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). Вариант: appendix = fill.repeat(bits - lenstr);  (для Java v. &gt;= 11). Этот вариант НЕ приняла система контроля Stepik, ни Java Trinket." />
+    <list default="true" id="eadea843-5696-47d4-b946-c8878799f0d5" name="Changes" comment="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). Вариант: appendix = fill.repeat(bits - lenstr);  (для Java v. &gt;= 11). Этот вариант НЕ приняла система контроля Stepik, ни Java Trinket.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634297754006</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). Вариант: appendix = fill.repeat(bits - lenstr);  (для Java v. &gt;= 11). Этот вариант НЕ приняла система контроля Stepik, ни Java Trinket.">
+      <created>1634297844442</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634297844442</updated>
+    </task>
+    <task id="LOCAL-00008" summary="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). Вариант: appendix = fill.repeat(bits - lenstr);  (для Java v. &gt;= 11). Этот вариант НЕ приняла система контроля Stepik, ни Java Trinket.">
+      <created>1634297935135</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634297935135</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +132,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="15.10.2021. Окончательный вариант. Kорректная работа с отрицательными числами и дополнением строк нулями (числа &gt; 0). &#10;Использован вариант для Java v. 11 и выше:&#10;appendix = fill.repeat(bits - lenstr);&#10;Он НЕ работает ни на Java Trinket, ни в системе контроля Stepik." />
