@@ -21,18 +21,19 @@ public class Main{
         System.out.println("Enter rowCheck :");     // Печать предложения ввода
         rowCheck = sc.nextLine();                   // Ввод проверяемой строки
         System.out.print(rowCheck);                 // Печать введенной строки
-        row1 = rowCheck.toLowerCase();              // Новая строка в нижнем регистре
+        //row1 = rowCheck.toLowerCase();              // Новая строка в нижнем регистре
         System.out.println();                       // Печать пустой строки
-        System.out.print("row1: ");                 // Печать получившейся строки
-        System.out.println(row1);
-        System.out.println(isPalindrome(row1));     // Вызов метода isPalindrome(String text)
+        System.out.print("rowCheck: ");                 // Печать получившейся строки
+        System.out.println(rowCheck);
+        System.out.println(isPalindrome(rowCheck));     // Вызов метода isPalindrome(String text)
     };
 
     public static boolean isPalindrome(String text) {
-        String row2;                                // Объявление строки
+        String row1, row2;                          // Объявление строки
         StringBuffer sb;                            // Объявление объекта StringBuffer
         boolean matching;                           // Объявление булевского объекта
-        row2 = text.replaceAll("[^a-zA-Z0-9]", "");     // Удаление ненужных символов
+        row1 = text.toLowerCase();                  // Новая строка в нижнем регистре
+        row2 = row1.replaceAll("[^a-zA-Z0-9]", "");  // Удаление ненужных символов
         System.out.print("After replace: ");        // Печать получившейся строки
         System.out.println(row2);
         sb = new StringBuffer(row2);                // Получение объекта StringBuffer для реверса строки
