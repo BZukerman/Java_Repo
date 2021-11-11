@@ -17,19 +17,18 @@ public class Main{
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);        // Организация ввода данных
-        String rowCheck, row1;                      // Объявление переменных (2 строки)
+        String rowCheck;                            // Объявление переменных (2 строки)
         System.out.println("Enter rowCheck :");     // Печать предложения ввода
         rowCheck = sc.nextLine();                   // Ввод проверяемой строки
         System.out.print(rowCheck);                 // Печать введенной строки
-        //row1 = rowCheck.toLowerCase();              // Новая строка в нижнем регистре
         System.out.println();                       // Печать пустой строки
-        System.out.print("rowCheck: ");                 // Печать получившейся строки
+        System.out.print("rowCheck: ");             // Печать получившейся строки
         System.out.println(rowCheck);
-        System.out.println(isPalindrome(rowCheck));     // Вызов метода isPalindrome(String text)
+        System.out.println(isPalindrome(rowCheck)); // Вызов метода isPalindrome(String text)
     };
 
     public static boolean isPalindrome(String text) {
-        String row1, row2;                          // Объявление строки
+        String row1, row2;                          // Объявление строк
         StringBuffer sb;                            // Объявление объекта StringBuffer
         boolean matching;                           // Объявление булевского объекта
         row1 = text.toLowerCase();                  // Новая строка в нижнем регистре
