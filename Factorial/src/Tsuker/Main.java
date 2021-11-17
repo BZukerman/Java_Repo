@@ -21,7 +21,7 @@ public class Main {
 
     public static BigInteger factorial(int value) {
         int i;                                      // Целочисленный счетчик цикла
-        BigInteger mult1, mult2, result;            // Переменный типа BigInteger
+        BigInteger mult1, mult2, result;            // Переменные типа BigInteger
         mult1 = new BigInteger("1");            // Инициализация первого сомножителя
         result = mult1;                             // Инициализация результата перед циклом
         for (i = 2; i <= value; i++) {              // Цикл можно начинать с i = 2; а не с i = 1;
