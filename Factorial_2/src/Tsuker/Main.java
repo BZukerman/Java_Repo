@@ -26,13 +26,16 @@ public class Main {
 
         switch (value) {                            // Ветвление по value
             case 0:                                 // Для введенного значения 0
-                return new BigInteger("1");     // Возврат 1
+                // return new BigInteger("1");     // Возврат 1
+                return BigInteger.ONE;
             case 1:                                 // Для введенного значения 1
-                return new BigInteger("1");     // Возврат 1
+                //return new BigInteger("1");     // Возврат 1
+                return BigInteger.ONE;
             default:                                // По умолчанию для введенного value > 1
         }                                           // выполняются действия ниже:
 
-        mult1 = new BigInteger("1");            // Инициализация первого сомножителя
+        //mult1 = new BigInteger("1");            // Инициализация первого сомножителя
+        mult1 = BigInteger.ONE;
         result = mult1;                             // Инициализация результата перед циклом
         for (i = 2; i <= value; i++) {              // Цикл можно начинать с i = 2; а не с i = 1;
             mult2 = BigInteger.valueOf(i);          // Второй сомножитель (преобразование int в BigInteger)
