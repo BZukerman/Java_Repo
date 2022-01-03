@@ -10,7 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter x_Src: ");
-        int x_SRC = sc.nextInt();
+        int x_Src = sc.nextInt();
 
         System.out.print("Enter y_Src: ");
         int y_Src = sc.nextInt();
@@ -19,23 +19,23 @@ public class Main {
         String dir_Src = sc.next();
         System.out.println("dir_Src: " + dir_Src);
 
-        //Direction dir_Src = Direction.RIGHT;
-        //if (dir_Src.equals("UP"))    {dir_Src = Direction.UP;}
-        //if (dir_Src.equals("DOWN"))  {dir_Src = Direction.DOWN;}
-        //if (dir_Src.equals("LEFT"))  {dir_Src = Direction.LEFT;}
-        //if (dir_Src.equals("RIGHT")) {dir_Src = Direction.RIGHT;}
-
        // Robot robot = new Robot(x, y, d);
 
-        System.out.print("Coordinate X to move robot: ");
+        System.out.print("Coordinate X to move robot: toX");
         int toX = sc.nextInt();
 
-        System.out.print("Coordinate Y to move robot: ");
+        System.out.print("Coordinate Y to move robot: toY: ");
         int toY = sc.nextInt();
 
         //Robot.moveRobot(robot, toX, toY);
 
         //System.out.println("\nFinal coordinates are: " + robot.getX() + ", " + robot.getY());
+
+        int dx, dy;
+        dx = toX - x_Src;
+        dy = toY - y_Src;
+        System.out.println("dx = " + dx);
+        System.out.println("dy = " + dy);
     }       // End of main
 
     public enum Direction {
